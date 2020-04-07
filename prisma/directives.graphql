@@ -1,0 +1,11 @@
+directive  @id on OBJECT | FIELD_DEFINITION
+directive  @createdAt on OBJECT | FIELD_DEFINITION
+directive  @updatedAt on OBJECT | FIELD_DEFINITION
+directive  @unique on OBJECT | FIELD_DEFINITION
+directive @relation(name : String! onDelete: DeleteTypes) on OBJECT | FIELD_DEFINITION
+
+
+enum DeleteTypes{
+    CASCADE
+    SET_NULL
+}
